@@ -1,0 +1,126 @@
+/* Estilos gerais para o body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Tela ativa */
+.tela.ativa {
+    display: block;
+}
+
+/* Tela inicial */
+#tela-inicial {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 20px;
+}
+
+/* Estilo do mapa */
+.mapa {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: #d0d0d0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem de fundo do mapa */
+.imagem-mapa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estilo da área vermelha (onde o acidente será marcado) */
+.area-vermelha {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.7);
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+/* Cards para mostrar as informações do acidente */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Card para informações */
+.card {
+    width: 220px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para os inputs e botão */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.formulario input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de adicionar */
+.botao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #45a049;
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: scale(1.05);
+}
+

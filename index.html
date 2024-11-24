@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeamento de Acidentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="tela-inicial" class="tela ativa">
+        <h1>Mapa de Acidentes</h1>
+        <div class="mapa">
+            <!-- Usando a imagem local do mapa -->
+            <img src="mapa-vitoria-da-conquista.jpg" alt="Mapa Vitória da Conquista" class="imagem-mapa">
+            <div id="area-vermelha" class="area-vermelha"></div>
+        </div>
+        
+        <!-- Formulário para adicionar o acidente -->
+        <div class="formulario">
+            <input type="text" id="localizacao" placeholder="Digite a localização (x,y)" />
+            <input type="text" id="descricao" placeholder="Digite a descrição do acidente" />
+            <button class="botao" onclick="adicionarAreaVermelha()">Adicionar Acidente</button>
+        </div>
+        
+        <!-- Cards para mostrar as informações dos acidentes -->
+        <div id="cards-container" class="cards-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
